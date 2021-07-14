@@ -23,7 +23,7 @@ const SplashScreen3 = (props) => {
             <TouchableOpacity
                     style={[styles.btn, styles.shadow, styles.btnLogin, styles.splashsignup]}
                     activeOpacity={0.7}
-                    //onPress={() => props.navigation.navigate('Login')}
+                    onPress={() => props.navigation.navigate('Signup')}
                     //onPress={() => submitHandler()}
                 >
                 <BoldText style={styles.linkText}>Sign Up</BoldText>

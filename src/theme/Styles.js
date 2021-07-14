@@ -39,11 +39,14 @@ const styles = StyleSheet.create({
     bannerIndicators: { position: 'absolute', bottom: 20 },
     // Form styles
     input: {
-        paddingHorizontal: 15, color: COLORS.dark, marginBottom: SIZES.md + 2,
-        borderWidth: 1, borderColor: '#ddd', width: WINDOW_WIDTH - 80, height: 50,
+        //paddingHorizontal: 15, color: COLORS.dark,
+        marginBottom: 5,
+        borderWidth: 0, borderColor: COLORS.white, width: WINDOW_WIDTH - 80, height: 50,
         borderRadius: SIZES.sm, shadowColor: COLORS.dark, shadowOpacity: 0.27, shadowOffset: { width: 0, height: 1},
-        shadowRadius: SIZES.sm, elevation: 5, backgroundColor: COLORS.white, fontFamily: 'NunitoSans-Regular'
+        shadowRadius: SIZES.md, elevation: 5, backgroundColor: COLORS.white, fontFamily: 'NunitoSans-Regular'
     },
+    inputViewBtn: { position: 'relative', right: 15, top: -45, elevation: 9, alignSelf: 'flex-end' },
+
 
     // Buttons styles
     btn: {borderColor: COLORS.light, borderWidth: 1, borderRadius: SIZES.sm, paddingVertical: SIZES.md},
@@ -69,10 +72,17 @@ const styles = StyleSheet.create({
     splashsignup: {borderWidth: 0, backgroundColor: COLORS.lightwhite, marginTop: 15},    
     //login
     loginLogo: {width: WINDOW_WIDTH, height: WINDOW_HEIGHT / 2.2,},
-    loginHeading: { fontSize: SIZES.md + 3, alignSelf: 'center', margin: SIZES.md + 15, color: COLORS.dark },
+    loginHeading: { fontSize: SIZES.md + 5, alignSelf: 'center', margin: SIZES.md + 15, color: COLORS.dark },
     loginWrapper: { paddingHorizontal: 40 },
-    fpWrap: { alignSelf: 'flex-end', marginBottom: SIZES.md },
-    loginbackgroung:{ backgroundColor: COLORS.lightwhite, width: WINDOW_WIDTH, height: WINDOW_HEIGHT - 10, borderTopLeftRadius: SIZES.xl, borderTopEndRadius: SIZES.xl}
+    fpWrap: { alignSelf: 'flex-end', marginBottom: SIZES.sm },
+    loginbackgroung:{ backgroundColor: COLORS.lightwhite, width: WINDOW_WIDTH, height: WINDOW_HEIGHT - 310, borderTopLeftRadius: SIZES.xl, borderTopEndRadius: SIZES.xl, paddingTop: SIZES.sm},
+    //signup
+    signupLogo: {width: WINDOW_WIDTH / 1.1, height: WINDOW_HEIGHT / 2.7,},
+    signupHeading: { fontSize: SIZES.md + 3, alignSelf: 'center', margin: SIZES.md, color: COLORS.dark },
+    signupWrapper: { paddingHorizontal: 40 },
+    signupbackgroung:{ backgroundColor: COLORS.lightwhite, width: WINDOW_WIDTH, height: WINDOW_HEIGHT - 250, borderTopLeftRadius: SIZES.xl, borderTopEndRadius: SIZES.xl, paddingTop: SIZES.sm},
+    signupbtnPrimary: {borderWidth: 0, backgroundColor: COLORS.primary },
+
 })
 
 export default styles
