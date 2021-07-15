@@ -13,7 +13,7 @@ const LoginScreen = props => {
     const [viewPassword, setViewPassword] = useState(true)
 
     const submitHandler = () => {
-        alert("Successfully signed in!!")
+        //alert("Successfully signed in!!")
         console.log(email, password)
         props.navigation.navigate("Home")
     }

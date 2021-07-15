@@ -4,10 +4,12 @@ import styles from '../../theme/Styles'
 import { COLORS } from '../../theme/Theme'
 import Header from '../../components/UIComponents/Header'
 
-const ContactScreen = () => {
+const ContactScreen = (props) => {
+    const { navigation } = props
+
     return (
         <>
-            <Header />
+            <Header navigation={navigation}/>
             <View style={[styles.flex1, styles.vhCenter]}>
                 <Text> hi Contact Screen</Text>
             </View>

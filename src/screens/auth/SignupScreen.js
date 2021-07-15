@@ -23,14 +23,6 @@ const SignupScreen = (props) => {
     }
     return (
         <View style={[styles.flex1, styles.bgWhite, styles.loginWrapper]}>
-            <View style={{ position: 'absolute', top: 15, left: 30 }}>
-                <TouchableOpacity 
-                    onPress={() => props.navigation.goBack()}
-                    activeOpacity={0.7}
-                >
-                    <Ionicon name={Platform.OS === 'ios' ? 'ios-arrow-back' : 'md-arrow-back'} size={SIZES.lg - 5} color={COLORS.primary} />
-                </TouchableOpacity>
-            </View>
             <View style={[styles.flex1, styles.vhCenter]}>
                 <Image source={Logo} style={styles.signupLogo} />
                 <View style={[styles.signupbackgroung, styles.signupWrapper]}>

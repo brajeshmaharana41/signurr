@@ -47,6 +47,16 @@ const styles = StyleSheet.create({
     },
     inputViewBtn: { position: 'relative', right: 15, top: -45, elevation: 9, alignSelf: 'flex-end' },
 
+    //Drawer
+    drawerbtn: {borderColor: COLORS.light, borderWidth: 1, borderRadius: SIZES.lg, paddingVertical: SIZES.md},
+    drawershadow: {
+        shadowColor: COLORS.black, shadowOpacity: 0.27, shadowOffset: { width: 0, height: 1},
+        shadowRadius: SIZES.sm, elevation: 3, backgroundColor: COLORS.white
+    },
+    drawerbutton: {width: 250, height: 60, position: 'relative', justifyContent: 'center', alignItems: 'center', left: 15, bottom: 5},
+    drawerbtnPrimary: {borderWidth: 1, backgroundColor: COLORS.white, borderColor: COLORS.lightwhite },
+    drawerbtnPrimaryText: {color: COLORS.dark, fontWeight: 'bold'},
+
 
     // Buttons styles
     btn: {borderColor: COLORS.light, borderWidth: 1, borderRadius: SIZES.sm, paddingVertical: SIZES.md},
@@ -82,7 +92,96 @@ const styles = StyleSheet.create({
     signupWrapper: { paddingHorizontal: 40 },
     signupbackgroung:{ backgroundColor: COLORS.lightwhite, width: WINDOW_WIDTH, height: WINDOW_HEIGHT - 250, borderTopLeftRadius: SIZES.xl, borderTopEndRadius: SIZES.xl, paddingTop: SIZES.sm},
     signupbtnPrimary: {borderWidth: 0, backgroundColor: COLORS.primary },
-
+    blurAbsolute: {
+        position: 'absolute',
+      },
+      drawerHeader: {
+        width: '100%',
+        height: SIZES.lg + 40,
+        marginVertical: 1,
+        padding: 16,
+        // backgroundColor: 'yellow',
+      },
+      profileImage: {
+        backgroundColor: Colors.light,
+        width: SIZES.lg,
+        height: SIZES.lg,
+        bottom: 20,    
+        borderRadius: SIZES.lg,
+        borderWidth: SIZES.lg,
+      },
+      textContainer: {
+          position: 'relative',
+          left: 20,
+          top: -55, 
+          elevation: 0,
+          alignSelf: 'center',
+    },
+    title: {  
+      color: Colors.dark,
+      fontSize: 20,
+      flex: 3,
+      bottom: 35,
+      textAlign: 'left',
+      paddingHorizontal: SIZES.sm +5
+    },
+    row_space: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+    },
+    // description: {
+    //   position: 'relative',
+    //   color: Colors.accent,
+    //   fontSize: 14,
+    //   textAlign: 'center',
+    //   fontWeight: 'bold',
+    //   flex: 1,
+    // },
+    drawerSection: {
+            marginTop: 15,
+          },
+    ////
+    // drawerContent: {
+    //     flex: 1,
+    //   },
+    //   userInfoSection: {
+    //     paddingLeft: 20,
+    //   },
+    //   title: {
+    //     marginTop: 20,
+    //     fontWeight: 'bold',
+    //   },
+    //   caption: {
+    //     fontSize: 14,
+    //     lineHeight: 14,
+    //   },
+    //   row: {
+    //     marginTop: 20,
+    //     flexDirection: 'row',
+    //     alignItems: 'center',
+    //   },
+    //   section: {
+    //     flexDirection: 'row',
+    //     alignItems: 'center',
+    //     marginRight: 15,
+    //   },
+    //   paragraph: {
+    //     fontWeight: 'bold',
+    //     marginRight: 3,
+    //   },
+      preference: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingVertical: 12,
+        paddingHorizontal: 16,
+      },
+      preference1: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingVertical: 6,
+        paddingHorizontal: 16,
+      },
 })
 
 export default styles
